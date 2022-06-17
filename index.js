@@ -17,7 +17,7 @@ const server = createServer((req, res) => {
     // define path to requested html file variable
     let path;
     // set response content type to html
-    res.setHeader("ContentType", "text/html");
+    res.setHeader("Content-Type", "text/html");
 
     // use switch to handle routing based on request url
     switch (url) {
