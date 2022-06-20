@@ -4,7 +4,7 @@ const { readFile } = require("fs");
 const { join } = require("path");
 
 // define connection variables
-const portNumber = 3000;
+const portNumber = process.env.PORT || 3000;
 const host = "localhost";
 
 // define function to return absolute path of requested file
